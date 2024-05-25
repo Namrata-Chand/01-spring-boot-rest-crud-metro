@@ -41,7 +41,7 @@ public class Train1RestController {
     @PostMapping("/trains")
     public Train1 addTrain(@RequestBody Train1 theTrain) {
         theTrain.setId(0);
-        System.out.println("Saving a new record...");
+        //System.out.println("Saving a new record...");
         return trainService.save(theTrain);
     }
 }
