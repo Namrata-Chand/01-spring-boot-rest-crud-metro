@@ -13,4 +13,6 @@ public interface TrainDAO {
     void deleteById(Integer trainId);
 
     Train1 save(Train1 train1);
+
+    public List<Train1> findByCode(String trainCode);
 }

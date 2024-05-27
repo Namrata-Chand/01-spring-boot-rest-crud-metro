@@ -73,4 +73,9 @@ public class TrainRestController {
         //System.out.println("Saving a new record...");
         return trainService.save(theTrain);
     }
+
+    @GetMapping("/trains/code/{trainCode}")
+    public List<Train1> findByCode(@PathVariable String trainCode) {
+        return trainService.findByCode(trainCode);
+    }
 }

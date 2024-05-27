@@ -39,4 +39,9 @@ public class TrainServiceImpl implements TrainService {
     public Train1 save(Train1 train1) {
         return trainDAO.save(train1);
     }
+
+    @Override
+    public List<Train1> findByCode(String trainCode) {
+        return trainDAO.findByCode(trainCode);
+    }
 }

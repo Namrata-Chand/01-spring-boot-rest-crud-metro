@@ -12,4 +12,6 @@ public interface TrainService {
     public void deleteById(Integer trainId);
 
     public Train1 save(Train1 train1);
+
+    public List<Train1> findByCode(String trainCode);
 }
