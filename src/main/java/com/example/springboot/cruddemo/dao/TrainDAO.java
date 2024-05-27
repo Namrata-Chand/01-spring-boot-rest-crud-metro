@@ -4,7 +4,7 @@ import com.example.springboot.cruddemo.entity.Train1;
 
 import java.util.List;
 
-public interface Train1DAO {
+public interface TrainDAO {
 
     public List<Train1> findAll();
 

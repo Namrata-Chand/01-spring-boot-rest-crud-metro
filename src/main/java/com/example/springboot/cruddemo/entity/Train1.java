@@ -16,7 +16,7 @@ public class Train1 {
 
     @Column(name = "train_code")
     String trainCode;
-
+    
     public String getTrainCode() {
         return trainCode;
     }
@@ -41,14 +41,15 @@ public class Train1 {
         this.trainTo = trainTo;
     }
 
+
     //define getters & setters
-
-    public int getId() {
-        return id;
-    }
-
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getId() {
+        System.out.println("in get id..");
+        return id;
     }
 
     public String getTrainFrom() {

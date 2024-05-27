@@ -9,12 +9,12 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class Train1DAOImpl implements Train1DAO {
+public class TrainDAOImpl implements TrainDAO {
 
     EntityManager entityManager;
 
     @Autowired
-    public Train1DAOImpl(EntityManager theEntityManager) {
+    public TrainDAOImpl(EntityManager theEntityManager) {
         entityManager = theEntityManager;
     }
 
