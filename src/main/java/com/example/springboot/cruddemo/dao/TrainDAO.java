@@ -6,11 +6,11 @@ import java.util.List;
 
 public interface TrainDAO {
 
-    public List<Train1> findAll();
+    List<Train1> findAll();
 
-    public Train1 findById(Integer trainId);
+    Train1 findById(Integer trainId);
 
-    public void deleteById(Integer trainId);
+    void deleteById(Integer trainId);
 
-    public Train1 save(Train1 train1);
+    Train1 save(Train1 train1);
 }
