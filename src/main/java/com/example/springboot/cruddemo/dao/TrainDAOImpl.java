@@ -44,5 +44,13 @@ public class TrainDAOImpl implements TrainDAO {
         return entityManager.merge(train1);
     }
 
+    @Override
+    public List<Train1> findByCode(String trainCode) {
+        TypedQuery<Train1> theQuery = entityManager.createQuery(" from Train1 where trainCode like '%" + trainCode + "%'", Train1.class);
+        /* TypedQuery<Train1> theQuery = entityManager.createQuery("from Train1 where trainCode like '%:trainCode%'", Train1.class).setParameter("trainCode", trainCode);*/
+        List<Train1> trains = theQuery.getResultList();
+        return trains;
+    }
+
 
 }
